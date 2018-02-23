@@ -30,7 +30,7 @@ shareImage();
 function shareImage() {
 
   html2canvas(document.body).then(function(canvas) {
-    // document.body.appendChild(canvas);
+    document.body.appendChild(canvas);
     var base64image = canvas.toDataURL("image/png");
 
     // Open the image in a new window
