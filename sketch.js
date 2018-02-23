@@ -16,7 +16,7 @@ function draw() {
 function mouseClicked() {
 
   print("miau");
-  shareImage();
+  //shareImage();
 
 }
 
