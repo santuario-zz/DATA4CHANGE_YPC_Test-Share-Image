@@ -34,7 +34,7 @@ function shareImage() {
     var base64image = canvas.toDataURL("image/png");
 
     // Open the image in a new window
-    window.open(base64image, "_blank");
+    //window.open(base64image, "_blank");
 
 
   });
