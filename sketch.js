@@ -24,19 +24,30 @@ function mouseClicked() {
 function keyPressed() {
 
   //shareImage();
-  shareHTML();
+  //shareHTML();
 
 }
 
 
 function shareHTML(){
-  
+  /*
      var a = document.body.appendChild(
         document.createElement("a")
     );
     a.download = "export.html";
     a.href = "data:text/html," + document.body.innerHTML; // Grab the HTML
     a.click(); // Trigger a click on the element
+    */
+    
+        var a = document.body.appendChild(
+        document.createElement("a")
+    );
+    a.download = "page.zip";
+    a.href = "http://www.adriansantuario.com/downloads/budo.zip"; // Grab the HTML
+    a.click(); // Trigger a click on the element
+    
+    
+    
     
 }
 
