@@ -6,7 +6,7 @@ function setup() {
 
 function draw() {
 
-  background(100,100,100);
+  background(255,100,100);
 
   ellipse(100, 100, 100, 100);
 
@@ -16,16 +16,29 @@ function draw() {
 function mouseClicked() {
 
   print("miau");
-  shareImage();
+ // shareImage();
+  shareHTML();
 
 }
 
 function keyPressed() {
 
-  shareImage();
+  //shareImage();
+  shareHTML();
 
 }
 
+
+function shareHTML(){
+  
+     var a = document.body.appendChild(
+        document.createElement("a")
+    );
+    a.download = "export.html";
+    a.href = "data:text/html," + document.body.innerHTML; // Grab the HTML
+    a.click(); // Trigger a click on the element
+    
+}
 
 function shareImage() {
 
