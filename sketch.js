@@ -6,7 +6,7 @@ function setup() {
 
 function draw() {
 
-  background(100,255,100);
+  background(100,100,255);
 
   ellipse(100, 100, 100, 100);
 
@@ -42,8 +42,10 @@ function shareHTML(){
         var a = document.body.appendChild(
         document.createElement("a")
     );
-    a.download = "page.zip";
-    a.href = "http://www.adriansantuario.com/downloads/budo.zip"; // Grab the HTML
+    a.download = "page.html";
+    a.href = "http://www.adriansantuario.com/downloads/budo.html"; // Grab the HTML
+    //a.href = "http://www.adriansantuario.com/downloads/budo.zip"; // Grab the HTML
+
     a.click(); // Trigger a click on the element
     
     
